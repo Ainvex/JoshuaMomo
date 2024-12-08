@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/*----------swiper-------*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #1A232C;
+}
+
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+
+header.sticky {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background: #00a349;
+  transition: 0.5s;
+  height: 10vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+header.sticky ul li a {
+  color: #fff;
+}
+
+/*---------home--------*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left, .right {
+  width: 50%;
+  position: relative;
+  padding: 30px;
+}
+
+button {
+  border: none;
+  background: white;
+  padding: 15px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn2 {
+  background: #c82020;
+  color: white;
+}
+
+.btn1:hover {
+  background: #00a349;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn2:hover {
+  background: white;
+  color: #131111;
+  border: 2px solid #c82020;
+}
+
+p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+
+
+/*---------home--------*/
+/*---------about--------*/
+.btn3 {
+  background: none;
+  border: 2px solid #c82020;
+  color: #0F161C;
+  padding: 15px 50px;
+}
+
+.background2 {
+  background: #c82020;
+  color: white;
+}
+
+
+/*---------skills--------*/
+/*---------line skills--------*/
+.line_content .line {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.line_content p {
+  text-transform: uppercase;
+  width: 35%;
+}
+
+.line_content h5 {
+  background: #30D3FF;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 12px;
+}
+
+.line_content h5::after {
+  position: absolute;
+  content: '';
+  left: -4px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  background: #30D3FF;
+  transform: rotate(45deg);
+}
+
+.line_content .line:nth-child(2) h5::after,
+.line_content .line:nth-child(2) h5 {
+  background: #FF761B;
+}
+
+.line_content .line:nth-child(3) h5::after,
+.line_content .line:nth-child(3) h5 {
+  background: #FF26BE;
+}
+
+.line_content .bar {
+  width: 60%;
+  background: #ffffff;
+  height: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.line_content .line_bar {
+  animation: bar 2.8s;
+  height: 5px;
+  background: #30D3FF;
+  width: 85%;
+}
+
+.line_content .css {
+  width: 70%;
+  background: #FF761B;
+}
+
+.line_content .photo {
+  width: 78%;
+  background: #FF26BE;
+}
+
+@keyframes bar {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes write {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    content: "15%";
+  }
+
+  40% {
+    content: "30%";
+  }
+
+  60% {
+    content: "45%";
+  }
+
+  80% {
+    content: "60%";
+  }
+
+  100% {
+    content: "70%";
+  }
+}
+
+/*---------line skills--------*/
+@keyframes circle_animation {
+  0% {
+    stroke-dashoffset: 340px;
+  }
+
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.skill-container {
+  margin-top: 50px;
+}
+
+circle {
+  stroke-width: 5px;
+  stroke: #D593FF;
+  fill: transparent;
+  animation: circle_animation 2s linear backwards;
+}
+
+.skill-container .circle_box:nth-child(2) circle {
+  stroke: #35FC00;
+}
+
+.skill-container .circle_box:nth-child(3) circle {
+  stroke: #FFA726;
+}
+
+.skill-container .circle_box:nth-child(4) circle {
+  stroke: #00A0D2;
+}
+
+circle p {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/*---------skills--------*/
+
+/*---------experience--------*/
+.experience {
+  padding-top: 5%;
+}
+
+.experience h2 {
+  margin: 0;
+}
+
+.experience .heading_top {
+  justify-content: center;
+}
+
+.experience .left img {
+  width: 80%;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline .content section {
+  width: 100%;
+}
+
+.timeline .line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: white;
+  left: 0;
+}
+
+.timeline .icon {
+  position: absolute;
+  background: #FFC514;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px !important;
+  box-shadow: 0 0 0 4px white,
+}
+
+.timeline .content:nth-child(5) .icon,
+.timeline .content:nth-child(3) .icon {
+  background: #20C863;
+}
+
+.content-1 .icon {
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.timeline .content section {
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline span {
+  color: #AC8713;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.timeline .content:nth-child(5) span,
+.timeline .content:nth-child(3) span {
+  color: #20C863;
+}
+
+.timeline .content {
+  margin-bottom: 20px;
+}
+
+.timeline p {
+  opacity: 0.5;
+}
+
+/*---------experience--------*/
+
+
+
+/*---------footer--------*/
+@media only screen and (max-width:768px) {
+  .left, .right {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+
+
+  /*---------about--------*/
+  /*---------services--------*/
+  .services {
+    margin-top: 100px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  /*---------services--------*/
+  /*---------skill--------*/
+  .skills .container {
+    flex-direction: column;
+  }
+
+  /*---------skill--------*/
+  /*---------portfolio--------*/
+  .portfolio .content {
+    flex-direction: column;
+  }
+
+  .portfolio .filter-menu {
+    margin-top: 30px;
+  }
+
+  /*---------portfolio--------*/
+  /*---------experience--------*/
+  .experience .content {
+    flex-direction: column;
+  }
+
+  .experience .left img {
+    width: 100%;
+  }
+
+  .experience .left, .right {
+    width: 100%;
+  }
+
+  /*---------experience--------*/
+  /*---------Testimonials--------*/
+  .Testimonials .container {
+    flex-direction: column;
+  }
+
+  /*---------Testimonials--------*/
+  /*---------contact--------*/
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact .left {
+    width: 100%;
+  }
+
+  .contact .right {
+    width: 100%;
+  }
+
+  /*---------contact--------*/
+  /*---------social_media--------*/
+  footer .content,
+  .social_media .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*---------social_media--------*/
+}
+
+@media only screen and (max-width:511px) {
+  .heading h2 {
+    font-size: 30px;
+  }
+
+  .heading h3 {
+    font-size: 20px;
+  }
+
+  .heading h4 {
+    font-size: 17px;
+  }
+
+  /*---------about--------*/
+  .about .box {
+    margin: 5px;
+  }
+
+  .about .items {
+    margin-left: 0%;
+  }
+
+  .about .items:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  /*---------about--------*/
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*---------skills--------*/
+  .skill-container {
+    flex-grow: 2;
+    flex-wrap: wrap;
+  }
+
+  /*---------skills--------*/
+  /*---------contact--------*/
+  .contact .input {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  /*---------social_media--------*/
+}
